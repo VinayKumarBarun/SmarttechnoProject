@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="AdminSection_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Computer Shop | Cabinet, Graphics Cards, PC Monitor - Smart Techno</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <ul class="uli">
+            <li><a class="active" href="../AdminLogin.aspx">Logout </a></li>
+            <li><a class="active" href="CategoryMaster.aspx"> Category Master </a></li>
+            <li><a class="active" href="ItemMaster.aspx">  Item Master </a></li>
+            <li><a class="active" href="ItemImage.aspx">Add Item Image </a></li>
+            
+        </ul>
+    </div>
+    <div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>
